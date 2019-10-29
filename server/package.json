@@ -1,0 +1,28 @@
+{
+  "name": "fullstackJs",
+  "version": "1.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.6.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "fullstack Javascript",
+    "vuejs",
+    "Blog",
+    "content management system",
+    "express"
+  ],
+  "author": "Udoh Ezekiel Saturday - CEO Wickend integrated Technologies",
+  "license": "ISC"
+}
