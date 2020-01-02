@@ -16,6 +16,16 @@ let posts = require('./routes/api/posts.js')();
 app.use('/api/posts', posts);
 
 
+//Handle production environment
+if (process.env.NODE_ENV === 'production') {
+    //STATIC FOLDER
+    app.use(express.static(__dirname + '/public/'));
+
+
+    //HANDLE SINGLE PAGE APPLICATION
+    app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
+}
+
 
 
 
